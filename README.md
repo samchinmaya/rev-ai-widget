@@ -42,6 +42,8 @@ A widget can't run programs or reach your keychain, so the small host app does t
 
 ## Everyday use
 
+- **Starts automatically when you log in / open the laptop.** The app registers itself as a login item (System Settings → General → Login Items shows **Rev Widget**). Widgets you've placed stay on the desktop across restarts. Turn this off with the "Open at login" toggle in the status window.
+
 - Data refreshes every 5 minutes and when your Mac wakes. To force it, open **Rev Widget** from `~/Applications` and click **Refresh now**.
 - "Open Rev" opens the installed **Rev AI** app (`dev.revai.app`) if you have it. Otherwise it brings forward, or starts, the dev copy in `~/code/rev-ai` with `npm start`. Point it elsewhere with:
   ```bash

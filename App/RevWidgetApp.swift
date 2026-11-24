@@ -31,10 +31,14 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
             forName: NSWorkspace.didWakeNotification, object: nil, queue: .main
         ) { [weak self] _ in self?.refresh() }
 
-        // First launch: turn on "open at login" and show the status window once.
+        // Start at login, every launch, unless you switched it off in the status window.
+        // (Re-registering keeps it working after a rebuild moves or re-signs the app.)
+        if !UserDefaults.standard.bool(forKey: "loginItemDisabledByUser") {
+            try? SMAppService.mainApp.register()
+        }
+        // First launch: show the status window once.
         if !UserDefaults.standard.bool(forKey: "didFirstLaunch") {
             UserDefaults.standard.set(true, forKey: "didFirstLaunch")
-            try? SMAppService.mainApp.register()
             showStatusWindow()
         }
         model.loginItemEnabled = SMAppService.mainApp.status == .enabled
@@ -158,6 +162,7 @@ final class StatusModel: ObservableObject {
 
     func setLoginItem(_ on: Bool) {
         do {
+            UserDefaults.standard.set(!on, forKey: "loginItemDisabledByUser")
             if on { try SMAppService.mainApp.register() } else { try SMAppService.mainApp.unregister() }
         } catch {
             saveError = error.localizedDescription
