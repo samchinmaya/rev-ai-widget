@@ -75,7 +75,10 @@ private struct Header: View {
     var body: some View {
         HStack(spacing: 4) {
             Link(destination: RevLinks.openRev) {
-                Label("Rev", systemImage: "arrow.triangle.pull").font(.headline)
+                HStack(spacing: 5) {
+                    RevLogo().frame(width: 16, height: 16)
+                    Text("Rev").font(.headline)
+                }
             }
             Spacer()
             if let s {

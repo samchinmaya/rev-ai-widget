@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		28AE8B5686E458A42334273C /* Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975545C91F3E84D551DB1ED /* Snapshot.swift */; };
+		373896011B2255802B82A984 /* RevLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E5DE1EFAAB264B17CBA7F /* RevLogo.swift */; };
+		3DD00B4513EF66F35D317C04 /* RevLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E5DE1EFAAB264B17CBA7F /* RevLogo.swift */; };
 		B627D7F097FB7FA17C4073B4 /* RevWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CA70DB98A0F327E23EF0EA /* RevWidget.swift */; };
 		B6B2BB0863B11D7FDCB92C81 /* RevWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F5D80CD74DEA1A5BD9E698 /* RevWidgetApp.swift */; };
 		BEDCCD44CB3271B7BDA2E84B /* GitHubFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B4C597804FC8FF2D558F2D /* GitHubFetcher.swift */; };
+		E5F71F06708CF289852D89C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F4E83970CFF95CDFCD11F40 /* Assets.xcassets */; };
 		EEE30D38561C76315239EB83 /* RevWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BD727DE3E4561CBDC27B1D78 /* RevWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		EF5E85E48AF3495DD02D4F9D /* Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975545C91F3E84D551DB1ED /* Snapshot.swift */; };
 /* End PBXBuildFile section */
@@ -40,17 +43,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1A1E5DE1EFAAB264B17CBA7F /* RevLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevLogo.swift; sourceTree = "<group>"; };
 		21CA70DB98A0F327E23EF0EA /* RevWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevWidget.swift; sourceTree = "<group>"; };
 		29F5D80CD74DEA1A5BD9E698 /* RevWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevWidgetApp.swift; sourceTree = "<group>"; };
 		312DAC7370F34E2A4F2AF1C2 /* RevWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RevWidgetExtension.entitlements; sourceTree = "<group>"; };
 		4492303FD59BD5425C1A31D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4B27A734AE74FA9EB3071354 /* RevWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RevWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F4E83970CFF95CDFCD11F40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5975545C91F3E84D551DB1ED /* Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snapshot.swift; sourceTree = "<group>"; };
 		8FB58787D743FF3D7C23AF9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BD727DE3E4561CBDC27B1D78 /* RevWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RevWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE04934552B8299BE2288CCD /* RevWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RevWidget.entitlements; sourceTree = "<group>"; };
 		D2B4C597804FC8FF2D558F2D /* GitHubFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubFetcher.swift; sourceTree = "<group>"; };
-		"TEMP_92CDDA72-69B0-4AF8-B8D2-FE02BE13263C" /* Local.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Local.xcconfig; sourceTree = "<group>"; };
+		"TEMP_3D20A0C1-2E49-4C8C-96B5-30E626063065" /* Local.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Local.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -67,6 +72,7 @@
 		0ED2D498C53A70F181859D75 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				4F4E83970CFF95CDFCD11F40 /* Assets.xcassets */,
 				D2B4C597804FC8FF2D558F2D /* GitHubFetcher.swift */,
 				4492303FD59BD5425C1A31D1 /* Info.plist */,
 				BE04934552B8299BE2288CCD /* RevWidget.entitlements */,
@@ -97,15 +103,16 @@
 		F8476FAE6942C01107F9BFF5 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				1A1E5DE1EFAAB264B17CBA7F /* RevLogo.swift */,
 				5975545C91F3E84D551DB1ED /* Snapshot.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
 		};
-		"TEMP_5A3E68DA-1826-41AD-9F5C-139EE68A0F79" /* rev-ai-widget */ = {
+		"TEMP_FBF213D7-2372-4AD0-97FB-BCC6F3FF48BC" /* rev-ai-widget */ = {
 			isa = PBXGroup;
 			children = (
-				"TEMP_92CDDA72-69B0-4AF8-B8D2-FE02BE13263C" /* Local.xcconfig */,
+				"TEMP_3D20A0C1-2E49-4C8C-96B5-30E626063065" /* Local.xcconfig */,
 			);
 			path = "rev-ai-widget";
 			sourceTree = "<group>";
@@ -118,6 +125,7 @@
 			buildConfigurationList = 9E49C7476FF02D811A0E8386 /* Build configuration list for PBXNativeTarget "RevWidget" */;
 			buildPhases = (
 				B45F3445B1A33490DF5014F7 /* Sources */,
+				16B7BFEC2993C1A1184DA460 /* Resources */,
 				4B6B86162222B5537CD31D64 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
@@ -188,11 +196,23 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		16B7BFEC2993C1A1184DA460 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5F71F06708CF289852D89C8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3BE7BDE4F6F9E29870F2EB09 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				373896011B2255802B82A984 /* RevLogo.swift in Sources */,
 				B627D7F097FB7FA17C4073B4 /* RevWidget.swift in Sources */,
 				28AE8B5686E458A42334273C /* Snapshot.swift in Sources */,
 			);
@@ -203,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEDCCD44CB3271B7BDA2E84B /* GitHubFetcher.swift in Sources */,
+				3DD00B4513EF66F35D317C04 /* RevLogo.swift in Sources */,
 				B6B2BB0863B11D7FDCB92C81 /* RevWidgetApp.swift in Sources */,
 				EF5E85E48AF3495DD02D4F9D /* Snapshot.swift in Sources */,
 			);
@@ -239,7 +260,7 @@
 		};
 		456C2F95DF37672B4D60CA63 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = "TEMP_92CDDA72-69B0-4AF8-B8D2-FE02BE13263C" /* Local.xcconfig */;
+			baseConfigurationReference = "TEMP_3D20A0C1-2E49-4C8C-96B5-30E626063065" /* Local.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -342,7 +363,7 @@
 		};
 		BC2EB05CBF6246F0842FE03C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = "TEMP_92CDDA72-69B0-4AF8-B8D2-FE02BE13263C" /* Local.xcconfig */;
+			baseConfigurationReference = "TEMP_3D20A0C1-2E49-4C8C-96B5-30E626063065" /* Local.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

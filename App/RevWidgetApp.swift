@@ -171,7 +171,10 @@ struct StatusView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
-            Text("Rev Widget").font(.title2.bold())
+            HStack(spacing: 8) {
+                RevLogo().frame(width: 24, height: 24)
+                Text("Rev Widget").font(.title2.bold())
+            }
             Text("Keeps the Rev widget up to date from your `gh` login. It runs in the background with no Dock icon.")
                 .font(.callout).foregroundStyle(.secondary)
                 .fixedSize(horizontal: false, vertical: true)

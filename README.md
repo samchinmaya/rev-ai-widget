@@ -7,7 +7,9 @@ A free macOS desktop / Notification Center widget for [Rev](../rev-ai). It shows
 - **Unread**: unread GitHub notifications
 
 Tapping a PR or notification opens it on GitHub. Tapping the **Rev** title opens Rev.
-Small, medium and large sizes are available.
+Small, medium and large sizes are available. It uses Rev's diamond logo for the widget header and the app icon (copied from `rev-ai/assets`).
+
+![Small and medium widget (sample data)](docs/preview.png)
 
 Completely free: built with Xcode and signed with a free Apple ID ("Personal Team"). No paid developer account, no AI calls, no tokens stored by this app.
 
