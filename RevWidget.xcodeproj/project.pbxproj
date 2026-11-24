@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28AE8B5686E458A42334273C /* Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975545C91F3E84D551DB1ED /* Snapshot.swift */; };
+		B627D7F097FB7FA17C4073B4 /* RevWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CA70DB98A0F327E23EF0EA /* RevWidget.swift */; };
+		B6B2BB0863B11D7FDCB92C81 /* RevWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F5D80CD74DEA1A5BD9E698 /* RevWidgetApp.swift */; };
+		BEDCCD44CB3271B7BDA2E84B /* GitHubFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B4C597804FC8FF2D558F2D /* GitHubFetcher.swift */; };
+		EEE30D38561C76315239EB83 /* RevWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BD727DE3E4561CBDC27B1D78 /* RevWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EF5E85E48AF3495DD02D4F9D /* Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975545C91F3E84D551DB1ED /* Snapshot.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9347673F70805BFF0DD239E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64EB04F644B98403942267D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 302F44F5242F29BD1BFDE3BA;
+			remoteInfo = RevWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4B6B86162222B5537CD31D64 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EEE30D38561C76315239EB83 /* RevWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		21CA70DB98A0F327E23EF0EA /* RevWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevWidget.swift; sourceTree = "<group>"; };
+		29F5D80CD74DEA1A5BD9E698 /* RevWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevWidgetApp.swift; sourceTree = "<group>"; };
+		312DAC7370F34E2A4F2AF1C2 /* RevWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RevWidgetExtension.entitlements; sourceTree = "<group>"; };
+		4492303FD59BD5425C1A31D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4B27A734AE74FA9EB3071354 /* RevWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RevWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5975545C91F3E84D551DB1ED /* Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snapshot.swift; sourceTree = "<group>"; };
+		8FB58787D743FF3D7C23AF9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BD727DE3E4561CBDC27B1D78 /* RevWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RevWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE04934552B8299BE2288CCD /* RevWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RevWidget.entitlements; sourceTree = "<group>"; };
+		D2B4C597804FC8FF2D558F2D /* GitHubFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubFetcher.swift; sourceTree = "<group>"; };
+		"TEMP_92CDDA72-69B0-4AF8-B8D2-FE02BE13263C" /* Local.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Local.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		09056863776306CFABA3E713 = {
+			isa = PBXGroup;
+			children = (
+				0ED2D498C53A70F181859D75 /* App */,
+				F8476FAE6942C01107F9BFF5 /* Shared */,
+				818D658AB61E702C579EC84D /* Widget */,
+				BD70A1B9FB78962555440A14 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0ED2D498C53A70F181859D75 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D2B4C597804FC8FF2D558F2D /* GitHubFetcher.swift */,
+				4492303FD59BD5425C1A31D1 /* Info.plist */,
+				BE04934552B8299BE2288CCD /* RevWidget.entitlements */,
+				29F5D80CD74DEA1A5BD9E698 /* RevWidgetApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		818D658AB61E702C579EC84D /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				8FB58787D743FF3D7C23AF9A /* Info.plist */,
+				21CA70DB98A0F327E23EF0EA /* RevWidget.swift */,
+				312DAC7370F34E2A4F2AF1C2 /* RevWidgetExtension.entitlements */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		BD70A1B9FB78962555440A14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B27A734AE74FA9EB3071354 /* RevWidget.app */,
+				BD727DE3E4561CBDC27B1D78 /* RevWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8476FAE6942C01107F9BFF5 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				5975545C91F3E84D551DB1ED /* Snapshot.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		"TEMP_5A3E68DA-1826-41AD-9F5C-139EE68A0F79" /* rev-ai-widget */ = {
+			isa = PBXGroup;
+			children = (
+				"TEMP_92CDDA72-69B0-4AF8-B8D2-FE02BE13263C" /* Local.xcconfig */,
+			);
+			path = "rev-ai-widget";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0912E365D9AD5262314FA089 /* RevWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E49C7476FF02D811A0E8386 /* Build configuration list for PBXNativeTarget "RevWidget" */;
+			buildPhases = (
+				B45F3445B1A33490DF5014F7 /* Sources */,
+				4B6B86162222B5537CD31D64 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D8B0985AFD4553251DC2964 /* PBXTargetDependency */,
+			);
+			name = RevWidget;
+			packageProductDependencies = (
+			);
+			productName = RevWidget;
+			productReference = 4B27A734AE74FA9EB3071354 /* RevWidget.app */;
+			productType = "com.apple.product-type.application";
+		};
+		302F44F5242F29BD1BFDE3BA /* RevWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA9A78695E515D835114EF45 /* Build configuration list for PBXNativeTarget "RevWidgetExtension" */;
+			buildPhases = (
+				3BE7BDE4F6F9E29870F2EB09 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RevWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = RevWidgetExtension;
+			productReference = BD727DE3E4561CBDC27B1D78 /* RevWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64EB04F644B98403942267D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					0912E365D9AD5262314FA089 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					302F44F5242F29BD1BFDE3BA = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E9A49DB0097D605DCA349A49 /* Build configuration list for PBXProject "RevWidget" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 09056863776306CFABA3E713;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = BD70A1B9FB78962555440A14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0912E365D9AD5262314FA089 /* RevWidget */,
+				302F44F5242F29BD1BFDE3BA /* RevWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BE7BDE4F6F9E29870F2EB09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B627D7F097FB7FA17C4073B4 /* RevWidget.swift in Sources */,
+				28AE8B5686E458A42334273C /* Snapshot.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B45F3445B1A33490DF5014F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEDCCD44CB3271B7BDA2E84B /* GitHubFetcher.swift in Sources */,
+				B6B2BB0863B11D7FDCB92C81 /* RevWidgetApp.swift in Sources */,
+				EF5E85E48AF3495DD02D4F9D /* Snapshot.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D8B0985AFD4553251DC2964 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 302F44F5242F29BD1BFDE3BA /* RevWidgetExtension */;
+			targetProxy = 9347673F70805BFF0DD239E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1C5C75BF33FA7928FFA419A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/RevWidget.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.revai.widget;
+				PRODUCT_NAME = "Rev Widget";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		456C2F95DF37672B4D60CA63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = "TEMP_92CDDA72-69B0-4AF8-B8D2-FE02BE13263C" /* Local.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4AC1E130983933B99E3266AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/RevWidget.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.revai.widget;
+				PRODUCT_NAME = "Rev Widget";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5A63A8F9FB3FA500378141BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widget/RevWidgetExtension.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.revai.widget.extension;
+				PRODUCT_NAME = RevWidgetExtension;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BC2EB05CBF6246F0842FE03C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = "TEMP_92CDDA72-69B0-4AF8-B8D2-FE02BE13263C" /* Local.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D3C088104D9C8B46F560AD88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widget/RevWidgetExtension.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.revai.widget.extension;
+				PRODUCT_NAME = RevWidgetExtension;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E49C7476FF02D811A0E8386 /* Build configuration list for PBXNativeTarget "RevWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AC1E130983933B99E3266AD /* Debug */,
+				1C5C75BF33FA7928FFA419A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E9A49DB0097D605DCA349A49 /* Build configuration list for PBXProject "RevWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				456C2F95DF37672B4D60CA63 /* Debug */,
+				BC2EB05CBF6246F0842FE03C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EA9A78695E515D835114EF45 /* Build configuration list for PBXNativeTarget "RevWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A63A8F9FB3FA500378141BE /* Debug */,
+				D3C088104D9C8B46F560AD88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 64EB04F644B98403942267D3 /* Project object */;
+}

@@ -1,0 +1,66 @@
+name: RevWidget
+options:
+  bundleIdPrefix: dev.revai
+  deploymentTarget:
+    macOS: "14.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    SWIFT_VERSION: "5.0"
+    CODE_SIGN_STYLE: Automatic
+    # Your free "Personal Team" ID. Set it in Local.xcconfig (see README) or in Xcode > Signing & Capabilities.
+    DEVELOPMENT_TEAM: ""
+configFiles:
+  Debug: Local.xcconfig
+  Release: Local.xcconfig
+targets:
+  RevWidget:
+    type: application
+    platform: macOS
+    sources: [App, Shared]
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleDisplayName: Rev Widget
+        LSUIElement: true
+        LSApplicationCategoryType: public.app-category.developer-tools
+        AppGroupID: $(TeamIdentifierPrefix)dev.revai.widget
+        CFBundleURLTypes:
+          - CFBundleURLName: dev.revai.widget
+            CFBundleURLSchemes: [revwidget]
+    entitlements:
+      path: App/RevWidget.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - $(TeamIdentifierPrefix)dev.revai.widget
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.revai.widget
+        PRODUCT_NAME: Rev Widget
+        ENABLE_HARDENED_RUNTIME: NO
+    dependencies:
+      - target: RevWidgetExtension
+        embed: true
+  RevWidgetExtension:
+    type: app-extension
+    platform: macOS
+    sources: [Widget, Shared]
+    info:
+      path: Widget/Info.plist
+      properties:
+        CFBundleDisplayName: Rev
+        AppGroupID: $(TeamIdentifierPrefix)dev.revai.widget
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    entitlements:
+      path: Widget/RevWidgetExtension.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
+        com.apple.security.application-groups:
+          - $(TeamIdentifierPrefix)dev.revai.widget
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.revai.widget.extension
+        PRODUCT_NAME: RevWidgetExtension
